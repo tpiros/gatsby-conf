@@ -11,7 +11,7 @@ module.exports = {
   plugins: [
     `gatsby-plugin-postcss`,
     `gatsby-transformer-cloudinary`,
-    `gatsby-transformer-remark`,
+    `gats by-transformer-remark`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
