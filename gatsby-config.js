@@ -1,6 +1,5 @@
-require("dotenv").config({
-  path: `.env.${process.env.NODE_ENV}`,
-})
+require("dotenv").config()
+
 module.exports = {
   siteMetadata: {
     title: `SellR`,
@@ -11,7 +10,7 @@ module.exports = {
   plugins: [
     `gatsby-plugin-postcss`,
     `gatsby-transformer-cloudinary`,
-    `gats by-transformer-remark`,
+    `gatsby-transformer-remark`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -20,10 +19,13 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-snipcartv3`,
+      resolve: `gatsby-plugin-snipcart-advanced`,
       options: {
-        apiKey: process.env.SNIPCART,
-        autopop: true,
+        publicApiKey: process.env.SNIPCART,
+        version: "3.0.30",
+        useSideCart: true,
+        openCartOnAdd: false,
+        currency: "gbp",
       },
     },
   ],

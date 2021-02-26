@@ -19,6 +19,7 @@
     "gatsby": "^2.26.1",
     "gatsby-plugin-postcss": "^3.7.0",
     "gatsby-plugin-snipcart": "^1.1.2",
+    "gatsby-plugin-snipcart-advanced": "^1.0.2",
     "gatsby-plugin-snipcartv3": "^2.3.3",
     "gatsby-source-filesystem": "^2.11.1",
     "gatsby-transformer-cloudinary": "^2.2.3",
