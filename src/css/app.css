@@ -1,0 +1,75 @@
+.product-list {
+  display: grid;
+  grid-gap: theme("spacing.20");
+}
+@screen sm {
+  .product-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@screen lg {
+  .product-list {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.markdown {
+  @apply text-gray-900 leading-normal break-words;
+}
+
+.markdown > * + * {
+  @apply mt-4;
+}
+
+.markdown strong {
+  @apply font-semibold;
+}
+
+.markdown a {
+  @apply text-blue-600 font-semibold;
+}
+
+.markdown strong a {
+  @apply font-bold;
+}
+
+.markdown h1 {
+  @apply leading-tight border-b text-4xl font-semibold mb-4 mt-6 pb-2;
+}
+
+.markdown h2 {
+  @apply leading-tight border-b text-2xl font-semibold mb-4 mt-6 pb-2;
+}
+
+.markdown h3 {
+  @apply leading-snug text-lg font-semibold mb-4 mt-6;
+}
+
+.markdown h4 {
+  @apply leading-none text-base font-semibold mb-4 mt-6;
+}
+
+.markdown h5 {
+  @apply leading-tight text-sm font-semibold mb-4 mt-6;
+}
+
+.markdown h6 {
+  @apply leading-tight text-sm font-semibold text-gray-600 mb-4 mt-6;
+}
+
+.markdown blockquote {
+  @apply text-base border-l-4 border-gray-300 pl-4 pr-4 text-gray-600;
+}
+
+.btn {
+  @apply font-bold py-2 px-4 rounded;
+}
+
+.btn-green {
+  @apply bg-green-600 text-white;
+}
+
+.btn-green:hover {
+  @apply bg-green-800;
+}
